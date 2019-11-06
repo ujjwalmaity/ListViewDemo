@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         listView = findViewById(R.id.list_view);
         String[] languages = {"JavaScript", "Python", "Java", "C", "C++", "PHP", "Swift", "C#", "Ruby", "Objective-C", "SQL", "Go", "Perl", "Scala", "Apex", "R", "SAS"};
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, languages);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, R.layout.layout_list_view_item, languages);
         listView.setAdapter(arrayAdapter);
         listView.setOnItemClickListener(this);
     }
